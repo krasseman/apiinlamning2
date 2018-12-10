@@ -1,0 +1,71 @@
+doctype html
+html(lang = "en")
+ head
+  title Document
+  style.
+    * {
+      font-size: 30px;
+    }
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
+    input[type=text] {
+      height: 50px;
+      padding: 10px;
+    }
+    input[type=submit] {
+      background-color: black;
+      color: white;
+      height: 74px;
+      padding: 10px;
+      border: 2px solid black;
+      transition-duration: 0.4s;
+    }
+    input[type=submit]:hover {
+      background-color: white;
+      color: black;
+      height: 74px;
+      padding: 10px;
+      border: 2px solid black;
+    }
+    .myh1 {
+      text-align: center;
+      color: white;
+      font-size: 40px;
+    }
+    .wrapper {
+       background-image: url('/images/background-img.jpg'); /* The image used */
+       background-color: #cccccc; /* Used if the image is unavailable */
+       height: 100vh; /* You must set a specified height */
+       background-position: center; /* Center the image */
+       background-repeat: no-repeat; /* Do not repeat the image */
+       background-size: cover; /* Resize the background image to cover the entire container */
+       padding: 0px;
+       margin: 0px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .headerdiv {
+      width: 500px;
+      margin: auto;
+    }
+    .resultdiv {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      width: 500px;
+      height: 80px;
+    }
+ body
+   block content

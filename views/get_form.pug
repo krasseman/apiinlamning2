@@ -1,0 +1,14 @@
+extends index.pug
+
+block content
+    div(class='wrapper')
+     div(class='container')
+      div(class='headerdiv')
+       h1(class='myh1') See the weather in your city!
+      div(class='formdiv')
+       form(method="post")
+        input(type="text", name="city_name", placeholder="Example: Gothenburg")
+        input(type="submit", value="Submit")
+      div(class='resultdiv') 
+       span(class='resultspan') #{weather.city},  #{weather.tempature} C, #{weather.description}
+        img.IdName(src='http://openweathermap.org/img/w/' + weather.icon + '.png')
